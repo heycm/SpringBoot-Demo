@@ -1,0 +1,8 @@
+server:
+  port: 8802
+
+spring:
+  datasource:
+    url: pro-url
+    username: pro-username
+    password: pro-password

@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: dev #环境隔离
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  type-aliases-package: com.test.springbootdemo.model
+  mapper-locations: classpath:mapping/*.xml
+
+logging:
+  config: classpath:log4j2/log4j2-config.xml
+  level:
+    cn.jay.repository: trace
+    com.test.springbootdemo.mapper: trace
+
+# 自定义属性配置和使用
+user-defined:
+  one: 1
+  two: 2
+  three: three
+  four:
+    isFour: true
+    isFive: false
+  any-other: other ${user-defined.one} ${user-defined.two}

@@ -1,0 +1,15 @@
+16:54:37.830 [main] INFO  com.test.springbootdemo.SpringbootDemoApplication - Starting SpringbootDemoApplication on WINDOWS-C238HAG with PID 4608 (D:\develop\my\springboot-demo\target\classes started by EDZ in D:\develop\my\springboot-demo)
+16:54:37.838 [main] INFO  com.test.springbootdemo.SpringbootDemoApplication - The following profiles are active: dev
+16:54:38.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8801"]
+16:54:38.981 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:54:38.982 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:54:39.060 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:54:39.156 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:54:39.366 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:54:40.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8801"]
+16:54:40.026 [main] INFO  com.test.springbootdemo.SpringbootDemoApplication - Started SpringbootDemoApplication in 3.024 seconds (JVM running for 4.577)
+16:54:50.100 [http-nio-8801-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:54:50.138 [http-nio-8801-exec-1] ERROR com.test.springbootdemo.controller.StudentController - [测试error]
+16:54:50.139 [http-nio-8801-exec-1] WARN  com.test.springbootdemo.controller.StudentController - [测试warn]
+16:54:50.180 [http-nio-8801-exec-1] INFO  com.test.springbootdemo.controller.StudentController - [根据多个名称模糊查询学生信息][请求参数:["张","李","赵"]][结束]
+16:54:50.414 [http-nio-8801-exec-1] INFO  com.test.springbootdemo.controller.StudentController - [根据多个名称模糊查询学生信息][查询结果:[{"sage":631123200000,"sid":"01","sname":"赵雷","ssex":"男"},{"sage":649872000000,"sid":"04","sname":"李云","ssex":"男"},{"sage":1513872000000,"sid":"09","sname":"张三","ssex":"女"},{"sage":1514044800000,"sid":"10","sname":"李四","ssex":"女"},{"sage":1514476800000,"sid":"11","sname":"李四","ssex":"女"},{"sage":1483200000000,"sid":"12","sname":"赵六","ssex":"女"}]][耗时:234ms][结束]

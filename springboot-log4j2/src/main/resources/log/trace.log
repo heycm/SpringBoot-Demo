@@ -1,0 +1,25 @@
+16:54:37.830 [main] INFO  com.test.springbootdemo.SpringbootDemoApplication - Starting SpringbootDemoApplication on WINDOWS-C238HAG with PID 4608 (D:\develop\my\springboot-demo\target\classes started by EDZ in D:\develop\my\springboot-demo)
+16:54:37.838 [main] INFO  com.test.springbootdemo.SpringbootDemoApplication - The following profiles are active: dev
+16:54:38.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8801"]
+16:54:38.981 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:54:38.982 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:54:39.060 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:54:39.156 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:54:39.366 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:54:40.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8801"]
+16:54:40.026 [main] INFO  com.test.springbootdemo.SpringbootDemoApplication - Started SpringbootDemoApplication in 3.024 seconds (JVM running for 4.577)
+16:54:50.100 [http-nio-8801-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:54:50.138 [http-nio-8801-exec-1] ERROR com.test.springbootdemo.controller.StudentController - [测试error]
+16:54:50.139 [http-nio-8801-exec-1] WARN  com.test.springbootdemo.controller.StudentController - [测试warn]
+16:54:50.180 [http-nio-8801-exec-1] INFO  com.test.springbootdemo.controller.StudentController - [根据多个名称模糊查询学生信息][请求参数:["张","李","赵"]][结束]
+16:54:50.331 [http-nio-8801-exec-1] DEBUG com.test.springbootdemo.mapper.StudentMapper.selectByExample - ==>  Preparing: select SId, Sname, Sage, Ssex from student WHERE ( Sname like ? ) or( Sname like ? ) or( Sname like ? ) or( Sname like ? ) 
+16:54:50.358 [http-nio-8801-exec-1] DEBUG com.test.springbootdemo.mapper.StudentMapper.selectByExample - ==> Parameters: %张%(String), %张%(String), %李%(String), %赵%(String)
+16:54:50.380 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==    Columns: SId, Sname, Sage, Ssex
+16:54:50.382 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==        Row: 01, 赵雷, 1990-01-01 00:00:00, 男
+16:54:50.383 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==        Row: 04, 李云, 1990-08-06 00:00:00, 男
+16:54:50.383 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==        Row: 09, 张三, 2017-12-22 00:00:00, 女
+16:54:50.384 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==        Row: 10, 李四, 2017-12-24 00:00:00, 女
+16:54:50.384 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==        Row: 11, 李四, 2017-12-29 00:00:00, 女
+16:54:50.385 [http-nio-8801-exec-1] TRACE com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==        Row: 12, 赵六, 2017-01-01 00:00:00, 女
+16:54:50.385 [http-nio-8801-exec-1] DEBUG com.test.springbootdemo.mapper.StudentMapper.selectByExample - <==      Total: 6
+16:54:50.414 [http-nio-8801-exec-1] INFO  com.test.springbootdemo.controller.StudentController - [根据多个名称模糊查询学生信息][查询结果:[{"sage":631123200000,"sid":"01","sname":"赵雷","ssex":"男"},{"sage":649872000000,"sid":"04","sname":"李云","ssex":"男"},{"sage":1513872000000,"sid":"09","sname":"张三","ssex":"女"},{"sage":1514044800000,"sid":"10","sname":"李四","ssex":"女"},{"sage":1514476800000,"sid":"11","sname":"李四","ssex":"女"},{"sage":1483200000000,"sid":"12","sname":"赵六","ssex":"女"}]][耗时:234ms][结束]
