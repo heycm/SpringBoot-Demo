@@ -48,7 +48,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         }
     }
     private Integer getIdByToken(){
-        // 没做redis缓存，暂时不用
+        // 没跟踪当前用户，暂时不用
         // HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         // String token = request.getHeader("Authorization").substring(1, request.getHeader("Authorization").length() - 1);
         // return (Integer) redisTemplate.opsForValue().get(token);
