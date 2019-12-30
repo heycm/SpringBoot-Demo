@@ -1,0 +1,15 @@
+server:
+  port: 8809
+
+dubbo:
+  application:
+    name:  dubbo-consumer
+  registry:
+    address: 127.0.0.1:2188
+    protocol: zookeeper
+    check: false
+  monitor:
+    protocol: register
+  consumer:
+    check:  false
+    timeout: 3000
